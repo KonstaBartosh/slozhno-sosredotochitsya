@@ -1,2 +1,132 @@
 .page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+
+.header {
+  height: 600px;
+  /* position: absolute;
+  inset: 0; */
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  align-content: space-evenly;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.header__title {
+  display: block;
+  grid-row: 2/3;
+  justify-self: start;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+}
+
+.header__text {
+  grid-row: 3/4;
+  justify-self: end;
+  max-width: 490px;
+  background-color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header__theme-menu-button {
+  padding: 4px 14px;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+/* main section */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* 80px for >756vw*/
+  padding-top: 40px; /* 60px for >756vw*/
+}
+
+.content__block {
+  display: grid;
+  gap: 20px;
+}
+
+.content__sub-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content__title {
+  font-size: 18px;
+  color: var(--accent-color);
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.content__subtitle {
+  font-size: 18px;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.content__subtitle_light {
+  font-weight: 400  ;
+}
+
+.content__paragraph {
+  font-size: 18px;
+  color: var(--font-color-light);
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+}
+
+
+.content__paragraph_link {
+  text-shadow: 1px 1px 0px var(--accent-color);
+  text-decoration: none;
+}
+
+.content__paragraph_underline {
+  display: inline-block; 
+  border-bottom: 1px solid var(--font-color-light);
 }
