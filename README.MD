@@ -1,4 +1,6 @@
-# Концентрация - пет проект для тренировки верстки гридами и адаптивной верстки
+# Просто о концентрации
 
-![Preview_v1](../slozhno-sosredotochitsya/images/preview%20v2.png)
-![Preview_v2](../slozhno-sosredotochitsya/images/preview%20v1.png)
+Мини-пет для тренировки верстки гридами и адаптивности
+
+![Preview_v1](../slozhno-sosredotochitsya/images/preview%20v2.jpeg)
+![Preview_v2](../slozhno-sosredotochitsya/images/preview%20v1.jpeg)
