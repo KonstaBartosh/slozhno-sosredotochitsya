@@ -1,12 +1,23 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --black-color: #353430;
+  --red-color: #ff8dcb;
+  --purple-color: #FFC2E6;
+  --title-color: #353430;
+  --paragraph-color: #353430;
+  --button-color: #353430;
+  --display-rec-decor: none;
+  --background-image: url(../images/cover-image-light.png)
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --black-color: #353430;
+    --red-color: #ff8dcb;
+    --purple-color: #FFC2E6;
+    --title-color: #353430;
+    --paragraph-color: #353430;
+    --button-color: #353430;
+    --display-rec-decor: none;
+    --background-image: url(../images/cover-image-light.png)
+  }
 }
